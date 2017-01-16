@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/linear_background">
+
+    <LinearLayout
+        android:id="@+id/activity_address_class"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@android:style/TextAppearance.Large"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:gravity="center"
+            android:text="@string/fill_the_address"
+            android:textColor="@color/first_page_text" />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/white">
+
+            <EditText
+                android:id="@+id/add_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/apptheme_textfield_focused_holo_light"
+                android:hint="@string/name"
+                android:inputType="textPersonName"
+                android:textColorHint="@color/hint_colors">
+
+                <requestFocus />
+            </EditText>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@android:color/white">
+
+            <EditText
+                android:id="@+id/add_addrone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/apptheme_textfield_focused_holo_light"
+                android:hint="@string/address_1"
+                android:inputType="textPostalAddress"
+                android:textColorHint="@color/hint_colors" />
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@android:color/white">
+
+            <EditText
+                android:id="@+id/add_addrtwo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/apptheme_textfield_focused_holo_light"
+                android:hint="@string/address_2"
+                android:inputType="textPostalAddress"
+                android:textColorHint="@color/hint_colors" />
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@android:color/white">
+
+            <EditText
+                android:id="@+id/add_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/apptheme_textfield_focused_holo_light"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:hint="@string/state"
+                android:textColorHint="@color/hint_colors" />
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@android:color/white">
+
+            <EditText
+                android:id="@+id/add_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/apptheme_textfield_focused_holo_light"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:hint="@string/city"
+                android:textColorHint="@color/hint_colors" />
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@android:color/white">
+
+            <EditText
+                android:id="@+id/add_postal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/apptheme_textfield_focused_holo_light"
+                android:hint="@string/postal_code"
+                android:inputType="number"
+                android:maxLength="6"
+                android:textColorHint="@color/hint_colors" />
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@android:color/white">
+
+            <EditText
+                android:id="@+id/add_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/apptheme_textfield_focused_holo_light"
+                android:hint="@string/number"
+                android:inputType="number"
+                android:maxLength="10"
+                android:textColorHint="@color/hint_colors" />
+        </android.support.v7.widget.CardView>
+
+        <Button
+            android:id="@+id/addr_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/button_background"
+            android:text="@string/next"
+            android:textColor="@color/button_textColor" />
+    </LinearLayout>
+
+
+</ScrollView>

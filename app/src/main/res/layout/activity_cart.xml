@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/actionbarwithoutimg" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_cart"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <ImageView
+        android:id="@+id/emptycart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:scaleType="centerInside"
+        android:src="@drawable/empty_cart"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/proceed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#111"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/proceed_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Total Number"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/proceed_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Proceed" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/extraview"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#111"
+        android:visibility="gone" />
+
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/acitvity_developer"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_my_orders"
+        android:orderInCategory="100"
+        android:title="@string/my_orders"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/cart"
+        android:orderInCategory="200"
+        android:title=""
+        app:actionLayout="@layout/layout_textoverimage"
+        app:showAsAction="ifRoom" />
+
+
+</menu>

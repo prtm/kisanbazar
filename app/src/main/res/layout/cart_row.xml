@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#1111"
+    android:orientation="vertical"
+    android:paddingBottom="4dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="4dp">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp">
+
+        <View
+            android:id="@+id/viewing"
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:background="#4c8aff" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/company_product_img"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="16dp" />
+
+            <TextView
+                android:id="@+id/company_product_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/company_product_img"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="name"
+                android:textColor="#80b3f1"
+                android:textSize="21sp" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/company_product_name"
+                android:layout_toRightOf="@+id/company_product_img"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="Rs" />
+
+                <Spinner
+                    android:id="@+id/types"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="price" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/linearLayout"
+                android:text="@string/remove" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/edittocart"
+                android:layout_alignBottom="@+id/edittocart"
+                android:layout_toEndOf="@+id/company_product_img"
+                android:layout_toRightOf="@+id/company_product_img"
+                android:gravity="center_vertical"
+                android:text="Quantity : "
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <EditText
+                android:id="@+id/edittocart"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/company_product_img"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/apptheme_textfield_focused_holo_light"
+                android:inputType="number"
+                android:maxLength="2"
+                android:text="1"
+                android:textColor="#80b3f1" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
